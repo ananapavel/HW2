@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <form action="">
+      <legend>
+        <h1>Регистрация</h1>
+      </legend>
+      <table>
+        <tr>
+          <td>
+            <label for="name">Имя и Фамилия *</label>
+            <input type="text" id="name" />
+          </td>
+          <td>
+            <label for="email">Email адрес *</label>
+            <input type="email" id="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Пароль *</label>
+            <input type="password" id="password" />
+          </td>
+          <td>
+            <label for="phone_number">Номер телефона *</label>
+            <input type="tel" id="phone_number" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="date">Дата рождения *</label>
+            <input type="date" id="date" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>Выберите пол</div>
+            <div class="sex_radio">
+              <div>
+                <input type="radio" id="male" name="sex" />
+                <label for="male">Мужчина</label>
+              </div>
+              <div>
+                <input type="radio" id="female" name="sex" />
+                <label for="female">Женщина</label>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="agree">
+              <input type="checkbox" id="agree_checkbox" />
+              <label for="agree_checkbox"
+                >Вы согласны с Политикой обработки персональных данных и
+                Условиями использовния сайта</label
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              class="button"
+              type="button"
+              onclick="location.href='/login.html';"
+              value="Зарегистрироваться"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e7f6f2;
+}
+
+.main_section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-spacing: 20px;
+}
+
+td {
+  border-radius: 10px;
+  background-color: #011627;
+  text-align: center;
+  padding: 10px;
+}
+
+td a {
+  color: #e7f6f2;
+  text-decoration: none;
+}
+
+td img {
+  transition: all 0.8s ease;
+  opacity: 0.6;
+  border-radius: 10px;
+  height: 420px;
+  width: 300px;
+  object-fit: cover;
+  object-position: 0% 80%;
+}
+
+td:hover img {
+  opacity: 1;
+}
+
+#hellsing img {
+  object-position: 0% 0%;
+}
+
+td p::-webkit-scrollbar {
+  display: none;
+}
+
+td p {
+  height: 150px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+li {
+  text-align: start;
+}
