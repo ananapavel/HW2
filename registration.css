@@ -1,13 +1,10 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  height: 100%;
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
@@ -88,4 +85,10 @@ table input {
 .button:hover,
 .button:focus {
   background-color: #0a6164d8;
+}
+
+@media (max-width: 1000px) {
+  table tr {
+    flex-direction: column;
+  }
 }

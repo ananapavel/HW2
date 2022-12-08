@@ -1,25 +1,15 @@
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   background-color: #e7f6f2;
-}
-
-.main_section h1 {
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Mouse Memoirs', sans-serif;
 }
 
 table {
@@ -71,4 +61,12 @@ td p {
 
 li {
   text-align: start;
+}
+
+@media (max-width: 1000px) {
+  tr {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 }

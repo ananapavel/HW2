@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.characters {
+  display: flex;
+}
+
+.character {
+  display: flex;
+  align-items: flex-end;
+}
