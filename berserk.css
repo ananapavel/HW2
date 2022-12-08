@@ -60,6 +60,7 @@ footer {
 }
 
 .characters {
+  flex-wrap: wrap;
   display: flex;
 }
 
@@ -68,4 +69,13 @@ footer {
   flex: 1;
   display: flex;
   align-items: flex-end;
+}
+
+@media (max-width: 1000px) {
+  section div {
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
 }
